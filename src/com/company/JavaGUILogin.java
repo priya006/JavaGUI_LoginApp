@@ -13,9 +13,10 @@ public class JavaGUILogin {
         //Object Creation
         JFrame jFrame = new JFrame();
         JPanel jPanel = new JPanel();
-        JLabel jLabel = new JLabel("userName");
-        JTextField jTextField = new JTextField();
-
+        JLabel userLabel = new JLabel("userName");
+        JLabel passLabel = new JLabel("password");
+        JTextField jTextField = new JTextField(20);
+        JPasswordField passwordText = new JPasswordField();
 
         //Frame Dimension
         jFrame.setSize(500,500);
@@ -27,16 +28,23 @@ public class JavaGUILogin {
         jPanel.setLayout(null);
 
 
-        jLabel.setBounds(10,20,80,25);
+        userLabel.setBounds(10,20,80,25);
         //Add the label to the panel
-        jPanel.add(jLabel);
+        jPanel.add(userLabel);
 
         //Adding text field
         jTextField.setBounds(100,20,165,25);
         jPanel.add(jTextField);
 
+        //Set where the label should appear in the panel
+        passLabel.setBounds(10,50,80,25);
+        //Add the password label to panel
+        jPanel.add(passLabel);
 
-
+        passwordText.setBounds(100,50,165,25);
+        jPanel.add(passwordText);
         jFrame.setVisible(true);
+
+
     }
 }
