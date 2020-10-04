@@ -1,12 +1,16 @@
 package com.company;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 //1. Make a frame
 //2  Make a panel(Layout)
-//3. Make a label
-//4. Make a Text field
-public class JavaGUILogin {
+//3. Make a UserName label
+//4. Make a UserName Text field
+//5. Make a passwordLabel and password Text field
+//6. Add a button named "login"
+public class JavaGUILogin implements ActionListener {
 
     public static void main(String[] args) {
 
@@ -17,6 +21,9 @@ public class JavaGUILogin {
         JLabel passLabel = new JLabel("password");
         JTextField jTextField = new JTextField(20);
         JPasswordField passwordText = new JPasswordField();
+        JButton jButton = new JButton("Login");
+        JLabel successLabel = new JLabel("User is logged in successfully");
+
 
         //Frame Dimension
         jFrame.setSize(500,500);
@@ -43,8 +50,27 @@ public class JavaGUILogin {
 
         passwordText.setBounds(100,50,165,25);
         jPanel.add(passwordText);
+
+        //Button
+        jButton.setBounds(10,80,80,25);
+        jPanel.add(jButton);
+
+        successLabel.setBounds(10,110,300,25);
+        jPanel.add(successLabel);
+
+        //Add ActionListner to the button
+        jButton.addActionListener(new JavaGUILogin());
+
+
         jFrame.setVisible(true);
 
+
+    }
+
+    //Every time if you click the button this code is run
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Hi You clicked the button");
 
     }
 }
