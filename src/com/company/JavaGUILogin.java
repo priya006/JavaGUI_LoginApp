@@ -12,17 +12,25 @@ import java.awt.event.ActionListener;
 //6. Add a button named "login"
 public class JavaGUILogin implements ActionListener {
 
+    private static JFrame jFrame;
+    private static JPanel jPanel;
+    private static JLabel userLabel;
+    private static JLabel passLabel;
+    private static JTextField userTextField;
+    private static JPasswordField passwordText;
+    private static JButton jButton;
+    private static JLabel successLabel;
     public static void main(String[] args) {
 
         //Object Creation
-        JFrame jFrame = new JFrame();
-        JPanel jPanel = new JPanel();
-        JLabel userLabel = new JLabel("userName");
-        JLabel passLabel = new JLabel("password");
-        JTextField jTextField = new JTextField(20);
-        JPasswordField passwordText = new JPasswordField();
-        JButton jButton = new JButton("Login");
-        JLabel successLabel = new JLabel("User is logged in successfully");
+        jFrame = new JFrame();
+        jPanel = new JPanel();
+        userLabel = new JLabel("userName");
+        passLabel = new JLabel("password");
+        userTextField = new JTextField(20);
+        passwordText = new JPasswordField();
+        jButton = new JButton("Login");
+        successLabel = new JLabel("User is logged in successfully");
 
 
         //Frame Dimension
@@ -40,8 +48,8 @@ public class JavaGUILogin implements ActionListener {
         jPanel.add(userLabel);
 
         //Adding text field
-        jTextField.setBounds(100,20,165,25);
-        jPanel.add(jTextField);
+        userTextField.setBounds(100,20,165,25);
+        jPanel.add(userTextField);
 
         //Set where the label should appear in the panel
         passLabel.setBounds(10,50,80,25);
@@ -70,7 +78,15 @@ public class JavaGUILogin implements ActionListener {
     //Every time if you click the button this code is run
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Hi You clicked the button");
+
+        String userName = userTextField.getText();
+        String password = passwordText.getText();
+
+        if(userName.equals("Priya") && password.equals("Something123#"))
+            successLabel.setText("Login Successful!");
+
+        else
+            successLabel.setText("UserName and Password is not correct :(");
 
     }
 }
