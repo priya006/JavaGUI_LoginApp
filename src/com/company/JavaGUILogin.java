@@ -30,7 +30,7 @@ public class JavaGUILogin implements ActionListener {
         userTextField = new JTextField(20);
         passwordText = new JPasswordField();
         jButton = new JButton("Login");
-        successLabel = new JLabel("User is logged in successfully");
+        successLabel = new JLabel();
 
 
         //Frame Dimension
@@ -82,11 +82,12 @@ public class JavaGUILogin implements ActionListener {
         String userName = userTextField.getText();
         String password = passwordText.getText();
 
-        if(userName.equals("Priya") && password.equals("Something123#"))
+        successLabel.setText("Enter credentials");
+        if(userName.equals("Priya") && password.equals("Something123#")) {
             successLabel.setText("Login Successful!");
-
-        else
+        }
+        else {
             successLabel.setText("UserName and Password is not correct :(");
-
+        }
     }
 }
