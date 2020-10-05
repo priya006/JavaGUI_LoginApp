@@ -31,3 +31,6 @@ displays `UserName and Password is not correct :(`
 
 ![Login_Not_Successful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Not_Successful.gif)
 
+# Usage
+Run the Class `JavaGUILogin`
+
