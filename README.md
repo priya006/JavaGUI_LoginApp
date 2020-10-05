@@ -27,7 +27,7 @@ displays `UserName and Password is not correct :(`
 
 ![Login_Sucessful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Successful.gif)
 
-# Login_Not_Successful**
+# Login_Not_Successful
 
 ![Login_Not_Successful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Not_Successful.gif)
 
