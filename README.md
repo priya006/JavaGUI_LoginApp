@@ -23,11 +23,11 @@ The success label displays `Login Successful!`
 If any other userName or password is entered the success label
 displays `UserName and Password is not correct :(` 
 
-**Login_Sucessful**
+# Login_Sucessful
 
 ![Login_Sucessful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Successful.gif)
 
-**Login_Not_Successful**
+# Login_Not_Successful**
 
 ![Login_Not_Successful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Not_Successful.gif)
 
