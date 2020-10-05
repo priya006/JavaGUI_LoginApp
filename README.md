@@ -1,5 +1,5 @@
 # Java GUI Login Application
-Login App For learning basics of Swing
+Login App using Classic Old Java Swing library
 
 # Technology Stack Used
 1. Java Swing library
