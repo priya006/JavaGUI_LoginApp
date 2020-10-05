@@ -83,7 +83,7 @@ public class JavaGUILogin implements ActionListener {
             successLabel.setText("Login Successful!");
         }
         else {
-            successLabel.setText("UserName and Password is not correct :(");
+            successLabel.setText("UserName or Password is not correct :(");
         }
     }
 }
