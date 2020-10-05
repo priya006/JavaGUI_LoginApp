@@ -4,12 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//1. Make a frame
-//2  Make a panel(Layout)
-//3. Make a UserName label
-//4. Make a UserName Text field
-//5. Make a passwordLabel and password Text field
-//6. Add a button named "login"
+
 public class JavaGUILogin implements ActionListener {
 
     private static JFrame jFrame;
@@ -80,6 +75,7 @@ public class JavaGUILogin implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         String userName = userTextField.getText();
+        //Deprecated method is used
         String password = passwordText.getText();
 
         successLabel.setText("Enter credentials");
