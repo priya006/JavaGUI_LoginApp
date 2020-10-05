@@ -1,4 +1,4 @@
-# JavaGUI_LoginApp
+# Java GUI Login Application
 Login App For learning basics of Swing
 
 # Technology Stack Used
