@@ -21,4 +21,4 @@ Enter userName = `Priya`
 Enter Password = `Something123#`
 The success label displays `Login Successful!`
 If any other userName or password is entered the success label
-displays `UserName and Password is not correct :(` 
+displays `UserName and Password is not correct:(` 
