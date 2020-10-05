@@ -1,4 +1,4 @@
-# JavaGUI_LoginApp
+# Java GUI Login Application
 Login App For learning basics of Swing
 
 # Technology Stack Used
@@ -21,4 +21,16 @@ Enter userName = `Priya`
 Enter Password = `Something123#`
 The success label displays `Login Successful!`
 If any other userName or password is entered the success label
-displays `UserName and Password is not correct:(` 
+displays `UserName and Password is not correct :(` 
+
+# Login Sucessful
+
+![Login_Sucessful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Successful.gif)
+
+# Login Not Successful
+
+![Login_Not_Successful](https://github.com/priya006/JavaGUI_LoginApp/blob/master/Login_Not_Successful.gif)
+
+# Usage
+Run the Class `JavaGUILogin`
+
